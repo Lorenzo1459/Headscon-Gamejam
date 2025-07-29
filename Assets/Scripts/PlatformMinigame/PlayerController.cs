@@ -58,6 +58,6 @@ public class PlayerController : MonoBehaviour
             canJump = false;
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse); // Adjust the jump force as needed
         }
-        else if( context)
+        //else if( context)
     }
 }
