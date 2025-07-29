@@ -29,7 +29,7 @@ public class PuzzlePiece : MonoBehaviour, IPointerClickHandler // Implement IPoi
 
         // Find the SlidingPuzzle script in the scene (assuming it's on the parent GameObject or an easily findable object)
         // A more robust way might be to pass it during initialization if the parent is not guaranteed
-        slidingPuzzleRef = FindObjectOfType<SlidingPuzzle>();
+        slidingPuzzleRef = FindFirstObjectByType<SlidingPuzzle>();
         if (slidingPuzzleRef == null)
         {
             Debug.LogError("SlidingPuzzle script not found in the scene! Cannot handle clicks.");
