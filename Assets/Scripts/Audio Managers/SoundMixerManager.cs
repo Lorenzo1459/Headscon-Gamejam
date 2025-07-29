@@ -10,7 +10,7 @@ public class SoundMixerManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject); // Keep this object across scenes
+            DontDestroyOnLoad(gameObject); // Keep this object across scenes
         }
         else
         {
