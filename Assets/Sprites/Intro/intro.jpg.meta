@@ -1,28 +1,10 @@
 fileFormatVersion: 2
-guid: 8603a2544ed0ea64284dc9450b0d0fd1
+guid: d5f80f6e9eda5de4a857c9fd52049c9e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6868122594974341346
-    second: Hit (32x32)_0
-  - first:
-      213: 7167584040609486739
-    second: Hit (32x32)_1
-  - first:
-      213: -1675461080110260169
-    second: Hit (32x32)_2
-  - first:
-      213: 8480664182131228983
-    second: Hit (32x32)_3
-  - first:
-      213: -953560442851353963
-    second: Hit (32x32)_4
-  - first:
-      213: -3450976776972242761
-    second: Hit (32x32)_5
-  - first:
-      213: 7062579536633761780
-    second: Hit (32x32)_6
+      213: 6143947034558860144
+    second: intro_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,33 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -153,172 +109,247 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hit (32x32)_0
+      name: intro_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 22
-        height: 28
+        x: 40
+        y: 1602
+        width: 617
+        height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2e8974b7c19705f50800000000000000
-      internalID: 6868122594974341346
+      spriteID: 8768a7593a6a4714fb2fa6ff3d2f4902
+      internalID: 262035091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_1
+      name: intro_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 0
-        width: 22
-        height: 28
+        x: 695
+        y: 1603
+        width: 617
+        height: 306
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 397994e95bf587360800000000000000
-      internalID: 7167584040609486739
+      spriteID: df0928665e2f00b4fa0ffa1620fcb244
+      internalID: -1046730683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_2
+      name: intro_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 0
-        width: 24
-        height: 27
+        x: 1345
+        y: 1601
+        width: 618
+        height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 730290d46019fb8e0800000000000000
-      internalID: -1675461080110260169
+      spriteID: 369d3558f776c414fbc6031e403b3e7b
+      internalID: -1793211777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_3
+      name: intro_3
       rect:
         serializedVersion: 2
-        x: 98
-        y: 2
-        width: 28
-        height: 23
+        x: 40
+        y: 1245
+        width: 618
+        height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7318f43242f51b570800000000000000
-      internalID: 8480664182131228983
+      spriteID: f797db51a24a657469b9c0952aba3cfe
+      internalID: -627114795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_4
+      name: intro_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 3
-        width: 30
-        height: 21
+        x: 691
+        y: 1244
+        width: 618
+        height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 59a1bf354d544c2f0800000000000000
-      internalID: -953560442851353963
+      spriteID: 5fb80d4b091125d4f9feb9781ee0518a
+      internalID: -1469102165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_5
+      name: intro_5
       rect:
         serializedVersion: 2
-        x: 162
-        y: 2
-        width: 28
-        height: 23
+        x: 1343
+        y: 1246
+        width: 616
+        height: 304
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7b07278c7eaab10d0800000000000000
-      internalID: -3450976776972242761
+      spriteID: c4c3bd7dd63ae3c4dba1f19829c506a3
+      internalID: 981293906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_6
+      name: intro_6
       rect:
         serializedVersion: 2
-        x: 195
-        y: 1
-        width: 26
-        height: 25
+        x: 40
+        y: 917
+        width: 618
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d255dca62a2694d99ec787abd1f241
+      internalID: -1921726572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: intro_7
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 919
+        width: 619
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3c8a5dec07aa24ab5e55eb76049f97
+      internalID: 1324646325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: intro_8
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 918
+        width: 618
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be46655a602f9048bfd72c297261bb3
+      internalID: 843073172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: intro_9
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 579
+        width: 616
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77b538abbd646d48a426836f051e6ca
+      internalID: 1908762294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: intro_10
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 223
+        width: 559
+        height: 594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4ff8ffe5ba2530260800000000000000
-      internalID: 7062579536633761780
+      spriteID: acc3a5a7b5c7baa4b8f0161850835afb
+      internalID: 1481512179
       vertices: []
       indices: 
       edges: []
@@ -327,7 +358,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f5fda4d3477942b40af81fdd240a75f8
     internalID: 0
     vertices: []
     indices: 
@@ -337,13 +368,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hit (32x32)_0: 6868122594974341346
-      Hit (32x32)_1: 7167584040609486739
-      Hit (32x32)_2: -1675461080110260169
-      Hit (32x32)_3: 8480664182131228983
-      Hit (32x32)_4: -953560442851353963
-      Hit (32x32)_5: -3450976776972242761
-      Hit (32x32)_6: 7062579536633761780
+      intro_0: 262035091
+      intro_1: -1046730683
+      intro_10: 1481512179
+      intro_2: -1793211777
+      intro_3: -627114795
+      intro_4: -1469102165
+      intro_5: 981293906
+      intro_6: -1921726572
+      intro_7: 1324646325
+      intro_8: 843073172
+      intro_9: 1908762294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

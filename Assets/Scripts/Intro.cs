@@ -30,11 +30,11 @@ public class Intro : MonoBehaviour
         {
             continueText.SetActive(true);
          
-            if (id >= spritelist.Count - 1)
+            /*if (id >= spritelist.Count - 1)
             {
                 continueText.SetActive(false);
                 return; 
-            }
+            }*/
 
             if (Input.GetMouseButtonDown(0))
             {
@@ -44,6 +44,8 @@ public class Intro : MonoBehaviour
                 if (spritelist != null && id < spritelist.Count && imageObject != null)
                 {
                     imageObject.sprite = spritelist[id];
+                } else {
+                    SceneLoader.Instance.LoadScene("Ingame");
                 }
             }
         }
