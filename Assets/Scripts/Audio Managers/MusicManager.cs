@@ -12,7 +12,7 @@ public class MusicManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject); // Mantém o objeto entre as cenas
+            DontDestroyOnLoad(gameObject); // Mantém o objeto entre as cenas
         }
         else
         {

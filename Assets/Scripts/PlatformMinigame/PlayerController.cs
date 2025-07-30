@@ -60,4 +60,15 @@ public class PlayerController : MonoBehaviour
         }
         //else if( context)
     }
+
+    public void OnEndLevel(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+        {
+            Debug.Log("Fase finalizada!");
+            SceneLoader.Instance.LoadScene("Ingame");
+            //FinishLevel();
+        }
+    }
+
 }

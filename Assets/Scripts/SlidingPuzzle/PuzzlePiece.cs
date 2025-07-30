@@ -1,18 +1,21 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
-using UnityEngine.EventSystems; // Required for IPointerClickHandler
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Image))]
-public class PuzzlePiece : MonoBehaviour, IPointerClickHandler // Implement IPointerClickHandler
+public class PuzzlePiece : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public int pieceValue;
     public int piecePosition;
     public Sprite sprite;
     public TextMeshProUGUI rightpostext;
 
-    private SlidingPuzzle slidingPuzzle; // Referência ao script principal do puzzle
+    
+    private Vector3 hoverScale = new Vector3(1f, 1f, 1f); // Scale when hovered
+    private Vector3 originalScale = new Vector3(.95f, .95f, 1f);
+    private SlidingPuzzle slidingPuzzle;
 
     void Awake()
     {
@@ -20,13 +23,12 @@ public class PuzzlePiece : MonoBehaviour, IPointerClickHandler // Implement IPoi
             rightpostext = GetComponentInChildren<TextMeshProUGUI>();
     }
 
-    // Corrigido: Recebe referência ao SlidingPuzzle
     public void Initialize(int value, int position, Sprite pieceSprite, SlidingPuzzle puzzle)
     {
         pieceValue = value;
         piecePosition = position;
         sprite = pieceSprite;
-        slidingPuzzle = puzzle; // Armazena a referência
+        slidingPuzzle = puzzle; // Armazena a referÃªncia
         GetComponent<Image>().sprite = sprite;
         if (rightpostext == null)
             rightpostext = GetComponentInChildren<TextMeshProUGUI>();
@@ -38,14 +40,27 @@ public class PuzzlePiece : MonoBehaviour, IPointerClickHandler // Implement IPoi
     {
         if (slidingPuzzle == null)
         {
-            Debug.LogWarning("SlidingPuzzle não atribuído em PuzzlePiece.");
+            Debug.LogWarning("SlidingPuzzle nÃ£o atribuÃ­do em PuzzlePiece.");
             return;
         }
+
         int puzzleSize = slidingPuzzle.puzzleSize;
         int row = piecePosition / puzzleSize;
         int col = piecePosition % puzzleSize;
         Debug.Log($"Clicked piece at value: {pieceValue}, position: {piecePosition}, row: {row}, col: {col}");
         slidingPuzzle.MoveTile(row, col);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        // Instantly set to hover scale
+        transform.localScale = hoverScale;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        // Instantly set back to original scale
+        transform.localScale = originalScale;
     }
 
     public bool IsCorrectPosition()

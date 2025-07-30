@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour {
     void Awake() {
         if (Instance == null) {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);    
         } 
         else {
             Destroy(gameObject);

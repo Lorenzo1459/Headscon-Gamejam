@@ -1,48 +1,62 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class SlidingPuzzle : MonoBehaviour
 {
-    public SlidingPuzzle instance;
-    void awake()
+    public static SlidingPuzzle instance;
+
+    void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
-        else { 
+        else
+        {
             Destroy(gameObject);
         }
     }
 
-
-    // Puzzle Configuration
+    // ConfiguraÃ§Ã£o do Puzzle
     public PuzzleObject puzzleObject;
-    
     public int puzzleSize = 3;
-    int[,] puzzleGrid;
+    private int[,] puzzleGrid;
 
-    // Puzzle UI Elements
+    // Elementos da UI
     public GameObject puzzlePiecePrefab;
     public GameObject parent;
-    private List<GameObject> piecesList = new List<GameObject>();
+    public GameObject solvedImage;
+    private readonly List<GameObject> piecesList = new List<GameObject>();
     public List<Sprite> spriteList;
+    private Sprite solvedSprite;
 
+    private bool checking = false;
+    private bool solved = false;
+
+    void Start()
+    {
+        LoadPuzzle();
+    }
+
+    public void ClearPuzzle()
+    {
+        solved = false;
+        solvedImage.SetActive(false);
+        foreach (GameObject piece in piecesList)
+        {
+            DestroyImmediate(piece);
+        }
+        piecesList.Clear();
+    }
 
     public void LoadPuzzle()
     {
-        piecesList = new List<GameObject>(); 
-        while (parent.transform.childCount > 0)
-        {
-            DestroyImmediate(parent.transform.GetChild(0).gameObject);
-        }
+        ClearPuzzle();
 
         puzzleSize = puzzleObject.puzzleSize;
         spriteList = puzzleObject.spriteList;
-
-        float backgroundWidth = parent.GetComponent<RectTransform>().rect.width;
-        float backgroundHeight = parent.GetComponent<RectTransform>().rect.height;
+        solvedSprite = puzzleObject.completed;
 
         puzzleGrid = new int[puzzleSize, puzzleSize];
         for (int i = 0, k = 0; i < puzzleSize; i++)
@@ -52,107 +66,135 @@ public class SlidingPuzzle : MonoBehaviour
                 puzzleGrid[i, j] = k;
 
                 GameObject piece = Instantiate(puzzlePiecePrefab, parent.transform);
-                PuzzlePiece puzzlePieceComponent = piece.GetComponent<PuzzlePiece>(); // Get the component first
+                PuzzlePiece puzzlePieceComponent = piece.GetComponent<PuzzlePiece>();
 
-                RectTransform pieceRect = piece.GetComponent<RectTransform>();
-                pieceRect.sizeDelta = new Vector2(backgroundWidth / puzzleSize, backgroundHeight / puzzleSize);
-                pieceRect.localScale = new Vector3(0.95f, 0.95f, 1f);
-
-                if (puzzlePieceComponent != null) // Add a null check for robustness
+                if (puzzlePieceComponent != null)
                 {
-                    puzzlePieceComponent.Initialize(k, k, spriteList[k], this);
+                    puzzlePieceComponent.Initialize(k, (i * puzzleSize + j), spriteList[k], this);
                 }
                 else
                 {
-                    Debug.LogError("PuzzlePiece component not found on the instantiated prefab! Make sure your puzzlePiecePrefab has the PuzzlePiece script attached.", piece);
+                    Debug.LogError("O componente PuzzlePiece nÃ£o foi encontrado no prefab!", piece);
                 }
 
-                // CORREÇÃO AQUI: Ajuste na coordenada Y
-                piece.GetComponent<RectTransform>().anchoredPosition = new Vector2(
-                    (j - (puzzleSize - 1) / 2f) * (backgroundWidth / puzzleSize),
-                    ((puzzleSize - 1) / 2f - i) * (backgroundHeight / puzzleSize) // Alterado para criar de cima para baixo
-                );
-
                 piecesList.Add(piece);
+                UpdatePieceVisuals(i, j);
                 k++;
             }
         }
 
-        puzzleGrid[puzzleSize - 1, puzzleSize - 1] = -1;
-        piecesList[puzzleSize * puzzleSize - 1].GetComponent<PuzzlePiece>().pieceValue = -1;
+        int lastIndex = puzzleSize - 1;
+        puzzleGrid[lastIndex, lastIndex] = -1;
         piecesList[puzzleSize * puzzleSize - 1].SetActive(false);
-    }
 
-    // Inside SlidingPuzzle.cs
-    void Start()
-    {
-        LoadPuzzle();
-        //RandomizePuzzle();
+        RandomizePuzzle();
     }
 
     public void RandomizePuzzle()
     {
-        // Embaralha o puzzle movendo apenas peças adjacentes ao espaço vazio
+        checking = false;
         for (int i = 0; i < puzzleSize * puzzleSize * 10; i++)
         {
-            int emptyRow = 0, emptyCol = 0;
-            FindEmptySlot(out emptyRow, out emptyCol);
-            List<(int, int)> adjacents = GetAdjacentTiles(emptyRow, emptyCol);
-            if (adjacents.Count > 0)
-            {
-                var (row, col) = adjacents[Random.Range(0, adjacents.Count)];
-                MoveTile(row, col);
-            }
+            MoveTile(Random.Range(0, puzzleSize), Random.Range(0, puzzleSize));
         }
+        checking = true;
     }
 
-    public void MoveTile(int row, int col)
+    public void MoveTile(int clickedRow, int clickedCol)
     {
-        if (row < 0 || row >= puzzleSize || col < 0 || col >= puzzleSize)
+        if (solved) return;
+        if (clickedRow < 0 || clickedRow >= puzzleSize || clickedCol < 0 || clickedCol >= puzzleSize || puzzleGrid[clickedRow, clickedCol] == -1)
         {
-            Debug.Log("Invalid tile position: " + row + ", " + col);
             return;
         }
-        if (puzzleGrid[row, col] == -1)
-            return;
 
-        int emptyRow, emptyCol;
-        FindEmptySlot(out emptyRow, out emptyCol);
+        FindEmptySlot(out int emptyRow, out int emptyCol);
 
-        // Só permite mover se for adjacente ao espaço vazio
-        if (IsAdjacent(row, col, emptyRow, emptyCol))
+        if (clickedRow != emptyRow && clickedCol != emptyCol)
         {
-            // Troca os valores no grid
-            puzzleGrid[emptyRow, emptyCol] = puzzleGrid[row, col];
-            puzzleGrid[row, col] = -1;
+            return;
+        }
 
-            // Atualiza as peças na lista
-            GameObject movedPiece = piecesList[puzzleGrid[emptyRow, emptyCol]];
-            movedPiece.GetComponent<PuzzlePiece>().piecePosition = emptyRow * puzzleSize + emptyCol;
-
-            // CORREÇÃO AQUI: Ajuste na coordenada Y para o movimento da peça
-            movedPiece.GetComponent<RectTransform>().anchoredPosition = new Vector2(
-                (emptyCol - (puzzleSize - 1) / 2f) * (parent.GetComponent<RectTransform>().rect.width / puzzleSize),
-                ((puzzleSize - 1) / 2f - emptyRow) * (parent.GetComponent<RectTransform>().rect.height / puzzleSize) // Alterado para corresponder à nova lógica de cima para baixo
-            );
+        if (clickedRow == emptyRow)
+        {
+            if (clickedCol < emptyCol)
+            {
+                for (int j = emptyCol; j > clickedCol; j--)
+                {
+                    puzzleGrid[emptyRow, j] = puzzleGrid[emptyRow, j - 1];
+                }
+            }
+            else
+            {
+                for (int j = emptyCol; j < clickedCol; j++)
+                {
+                    puzzleGrid[emptyRow, j] = puzzleGrid[emptyRow, j + 1];
+                }
+            }
         }
         else
         {
-            Debug.Log("Tile at " + row + ", " + col + " is not adjacent to empty slot.");
+            if (clickedRow < emptyRow)
+            {
+                for (int i = emptyRow; i > clickedRow; i--)
+                {
+                    puzzleGrid[i, emptyCol] = puzzleGrid[i - 1, emptyCol];
+                }
+            }
+            else
+            {
+                for (int i = emptyRow; i < clickedRow; i++)
+                {
+                    puzzleGrid[i, emptyCol] = puzzleGrid[i + 1, emptyCol];
+                }
+            }
         }
 
-        //Debug.Log("CheckSolve");
-        if (IsPuzzleSolved())
+        puzzleGrid[clickedRow, clickedCol] = -1;
+
+        if (clickedRow == emptyRow)
         {
-            Debug.Log("Puzzle Solved!");
-            // Aqui você pode adicionar lógica para o que acontece quando o puzzle é resolvido
+            for (int j = 0; j < puzzleSize; j++) UpdatePieceVisuals(clickedRow, j);
+        }
+        else
+        {
+            for (int i = 0; i < puzzleSize; i++) UpdatePieceVisuals(i, clickedCol);
+        }
+
+        if (IsPuzzleSolved())
+        {   
+            Debug.Log("Puzzle Resolvido!");
+            piecesList[puzzleSize * puzzleSize - 1].SetActive(true);
+            UpdatePieceVisuals(puzzleSize - 1, puzzleSize - 1);
+            ClearPuzzle();
+            solvedImage.SetActive(true);
         }
     }
 
-    bool IsAdjacent(int row1, int col1, int row2, int col2)
+    private void UpdatePieceVisuals(int row, int col)
     {
-        return (Mathf.Abs(row1 - row2) == 1 && col1 == col2) ||
-               (Mathf.Abs(col1 - col2) == 1 && row1 == row2);
+        int pieceValue = puzzleGrid[row, col];
+        if (pieceValue == -1) return;
+
+        GameObject piece = piecesList[pieceValue];
+
+        PuzzlePiece puzzlePieceComponent = piece.GetComponent<PuzzlePiece>();
+        if (puzzlePieceComponent != null)
+        {
+            puzzlePieceComponent.piecePosition = row * puzzleSize + col;
+        }
+
+        RectTransform pieceRect = piece.GetComponent<RectTransform>();
+        float backgroundWidth = parent.GetComponent<RectTransform>().rect.width;
+        float backgroundHeight = parent.GetComponent<RectTransform>().rect.height;
+
+        pieceRect.sizeDelta = new Vector2(backgroundWidth / puzzleSize, backgroundHeight / puzzleSize);
+        pieceRect.localScale = new Vector3(0.95f, 0.95f, 1f);
+
+        pieceRect.anchoredPosition = new Vector2(
+            (col - (puzzleSize - 1) / 2f) * (backgroundWidth / puzzleSize),
+            ((puzzleSize - 1) / 2f - row) * (backgroundHeight / puzzleSize)
+        );
     }
 
     void FindEmptySlot(out int emptyRow, out int emptyCol)
@@ -173,38 +215,10 @@ public class SlidingPuzzle : MonoBehaviour
         emptyCol = -1;
     }
 
-    List<(int, int)> GetAdjacentTiles(int row, int col)
-    {
-        List<(int, int)> adjacents = new List<(int, int)>();
-        int[,] directions = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
-        for (int d = 0; d < 4; d++)
-        {
-            int newRow = row + directions[d, 0];
-            int newCol = col + directions[d, 1];
-            if (newRow >= 0 && newRow < puzzleSize && newCol >= 0 && newCol < puzzleSize)
-            {
-                if (puzzleGrid[newRow, newCol] != -1)
-                    adjacents.Add((newRow, newCol));
-            }
-        }
-        return adjacents;
-    }
-
-    public void PrintPuzzle()
-    {
-        for (int i = 0; i < puzzleSize; i++)
-        {
-            string row = "";
-            for (int j = 0; j < puzzleSize; j++)
-            {
-                row += puzzleGrid[i, j] + " ";
-            }
-            Debug.Log(row);
-        }
-    }
-
     public bool IsPuzzleSolved()
     {
+        if (!checking) return false;
+
         int expectedValue = 0;
         for (int i = 0; i < puzzleSize; i++)
         {
@@ -212,18 +226,17 @@ public class SlidingPuzzle : MonoBehaviour
             {
                 if (i == puzzleSize - 1 && j == puzzleSize - 1)
                 {
-                    if (puzzleGrid[i, j] != -1) // Last piece should be empty
-                        return false;
+                    if (puzzleGrid[i, j] != -1) return false;
                 }
                 else
                 {
-                    if (puzzleGrid[i, j] != expectedValue)
-                        return false;
+                    if (puzzleGrid[i, j] != expectedValue) return false;
                     expectedValue++;
                 }
             }
         }
+
+        solved = true;
         return true;
     }
 }
-
