@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3df20a60af10e4a47882017187e8597b
+guid: dfa59abc2e6857241a44b449bfd31c50
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8506735889323900786
-    second: puzzle_0
+      213: -8346667246893509311
+    second: peixe_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,89 +152,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puzzle2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 450
-        width: 450
-        height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87ed79c722f4cf04789ddde232f85fd9
-      internalID: -193005230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle2_1
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 450
-        width: 450
-        height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f02d0a0c32f843b48826bff3793f1f24
-      internalID: 956340959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle2_2
+      name: peixe_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 450
-        height: 450
+        width: 268
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3a58728ddd9b9ca4c9b352794d7c1482
-      internalID: -905658974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle2_3
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 0
-        width: 450
-        height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9a0b3aa4fca1804a8a1ad16183ec69b
-      internalID: 1589195616
+      spriteID: 145568a8c5eaa2c80800000000000000
+      internalID: -8346667246893509311
       vertices: []
       indices: 
       edges: []
@@ -243,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 56b3b4334f11ae6419f4232aee41b049
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -252,11 +186,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      puzzle2_0: -193005230
-      puzzle2_1: 956340959
-      puzzle2_2: -905658974
-      puzzle2_3: 1589195616
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

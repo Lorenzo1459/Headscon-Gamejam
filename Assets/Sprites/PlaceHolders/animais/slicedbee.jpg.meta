@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ecb15fccabf96ba4c8f9f04bdf0c01bd
+guid: f3de3aa725508a44fbd84adb317591dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8506735889323900786
-    second: puzzle_0
+      213: -6141460806656067147
+    second: Screenshot_7_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puzzle4_0
+      name: slicedbee_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 675
-        width: 225
-        height: 225
+        y: 96
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a6bf819eb02c71458d183cea07a2112
-      internalID: 424463477
+      spriteID: 0d4604a750065ee4c9711621932f0f0a
+      internalID: -772008304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle4_1
+      name: slicedbee_1
       rect:
         serializedVersion: 2
-        x: 225
-        y: 675
-        width: 225
-        height: 225
+        x: 47
+        y: 96
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa2e13b65e7fc2946bd015d29877f3b1
-      internalID: -662182511
+      spriteID: 7addb60ce4b89ae40944e1717e85afa4
+      internalID: 261543882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle4_2
+      name: slicedbee_2
       rect:
         serializedVersion: 2
-        x: 450
-        y: 675
-        width: 225
-        height: 225
+        x: 94
+        y: 96
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,42 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5afaf3a24513e224d849a698a6f0d64f
-      internalID: 1409315686
+      spriteID: 3b059a14a4abfa94692fd6e07ed6170c
+      internalID: -68007420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle4_3
-      rect:
-        serializedVersion: 2
-        x: 675
-        y: 675
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ead45dfebcb41dd419795e67be9029b4
-      internalID: -2109422941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle4_4
+      name: slicedbee_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 450
-        width: 225
-        height: 225
+        y: 49
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0c2493b310f5dd40a5909ecf0670e2c
-      internalID: -382005979
+      spriteID: a19c37c0003aa68449edc4cc5bd2628e
+      internalID: 253593619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle4_5
+      name: slicedbee_4
       rect:
         serializedVersion: 2
-        x: 225
-        y: 450
-        width: 225
-        height: 225
+        x: 47
+        y: 49
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 681baf8818701c24ba9232d4a63ec936
-      internalID: 1450605922
+      spriteID: fd09f4262d37fe5468c49fcbdea55fd0
+      internalID: 1699430114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle4_6
+      name: slicedbee_5
       rect:
         serializedVersion: 2
-        x: 450
-        y: 450
-        width: 225
-        height: 225
+        x: 94
+        y: 49
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,42 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e10d0002218add428257056dbc29fa0
-      internalID: 625961521
+      spriteID: 1ddf03593aae59141af7c64b884c1192
+      internalID: 894780499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle4_7
-      rect:
-        serializedVersion: 2
-        x: 675
-        y: 450
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8db52cc4fa065814eac24b372542afd8
-      internalID: -644172205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle4_8
+      name: slicedbee_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 225
-        width: 225
-        height: 225
+        y: 2
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9577cfd17a895044ba68298d87e89d6
-      internalID: -532300444
+      spriteID: 824ff0367051a2c49aacbf5311a6d16f
+      internalID: 642062579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle4_9
+      name: slicedbee_7
       rect:
         serializedVersion: 2
-        x: 225
-        y: 225
-        width: 225
-        height: 225
+        x: 47
+        y: 2
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,20 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b6f4f99738463d4da16270edfbebe0d
-      internalID: 282292547
+      spriteID: 872976e6022213e4fb356e6fdf4912b0
+      internalID: -6275514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle4_10
+      name: slicedbee_8
       rect:
         serializedVersion: 2
-        x: 450
-        y: 225
-        width: 225
-        height: 225
+        x: 94
+        y: 2
+        width: 47
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,118 +343,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68f4e35b012187643a10f9f0b6036120
-      internalID: 1509595210
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle4_11
-      rect:
-        serializedVersion: 2
-        x: 675
-        y: 225
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d6754b85def8a04d826e9e19d92f28e
-      internalID: -2090237792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle4_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e22432f0913810542bcf48c91e447445
-      internalID: -320850148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle4_13
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 0
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59fe3f8a80a522748af39aedf5285218
-      internalID: -1858495402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle4_14
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 0
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0b69570878a4f446ba34cd9c4e3cf43
-      internalID: -1403199773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle4_15
-      rect:
-        serializedVersion: 2
-        x: 675
-        y: 0
-        width: 225
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25f6822da273ac14ba604076f94b1c5b
-      internalID: -1567096656
+      spriteID: 2e6eb92fee25c864bb0f97b9fd9768b8
+      internalID: -810157716
       vertices: []
       indices: 
       edges: []
@@ -507,7 +353,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 56b3b4334f11ae6419f4232aee41b049
+    spriteID: 30e22b67767d6f04a8e441acbea75318
     internalID: 0
     vertices: []
     indices: 
@@ -517,22 +363,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      puzzle4_0: 424463477
-      puzzle4_1: -662182511
-      puzzle4_10: 1509595210
-      puzzle4_11: -2090237792
-      puzzle4_12: -320850148
-      puzzle4_13: -1858495402
-      puzzle4_14: -1403199773
-      puzzle4_15: -1567096656
-      puzzle4_2: 1409315686
-      puzzle4_3: -2109422941
-      puzzle4_4: -382005979
-      puzzle4_5: 1450605922
-      puzzle4_6: 625961521
-      puzzle4_7: -644172205
-      puzzle4_8: -532300444
-      puzzle4_9: 282292547
+      slicedbee_0: -772008304
+      slicedbee_1: 261543882
+      slicedbee_2: -68007420
+      slicedbee_3: 253593619
+      slicedbee_4: 1699430114
+      slicedbee_5: 894780499
+      slicedbee_6: 642062579
+      slicedbee_7: -6275514
+      slicedbee_8: -810157716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

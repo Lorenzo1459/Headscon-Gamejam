@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd384c3735ef78b46bc8be107a4ebf89, type: 3}
+  m_Name: Npc Preguica
+  m_EditorClassIdentifier: 
+  nome: preguica
+  sprite: {fileID: 9027329295974318660, guid: 9c5373a976e4bf1478668cb35e9aef35, type: 3}
+  puzzleObject: {fileID: 11400000, guid: 43596b6f21c67074d941aa6eb3442f77, type: 2}
+  minigameSceneName: PlatformMiniGame

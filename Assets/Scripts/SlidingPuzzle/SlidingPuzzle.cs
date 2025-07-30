@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class SlidingPuzzle : MonoBehaviour
 {
-    public static SlidingPuzzle instance;
+    public SlidingPuzzle instance;
 
     void Awake()
     {
@@ -29,7 +29,6 @@ public class SlidingPuzzle : MonoBehaviour
     public GameObject solvedImage;
     private readonly List<GameObject> piecesList = new List<GameObject>();
     public List<Sprite> spriteList;
-    private Sprite solvedSprite;
 
     private bool checking = false;
     private bool solved = false;
@@ -56,7 +55,7 @@ public class SlidingPuzzle : MonoBehaviour
 
         puzzleSize = puzzleObject.puzzleSize;
         spriteList = puzzleObject.spriteList;
-        solvedSprite = puzzleObject.completed;
+        solvedImage.GetComponent<Image>().sprite = puzzleObject.completed;
 
         puzzleGrid = new int[puzzleSize, puzzleSize];
         for (int i = 0, k = 0; i < puzzleSize; i++)
@@ -167,6 +166,7 @@ public class SlidingPuzzle : MonoBehaviour
             piecesList[puzzleSize * puzzleSize - 1].SetActive(true);
             UpdatePieceVisuals(puzzleSize - 1, puzzleSize - 1);
             ClearPuzzle();
+
             solvedImage.SetActive(true);
         }
     }

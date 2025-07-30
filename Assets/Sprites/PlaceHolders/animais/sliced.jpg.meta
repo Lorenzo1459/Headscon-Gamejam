@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: daaf1ac87eaf1fb4cb9a686384c1be6a
+guid: a304201cb9484ff469c1e669047f35ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8506735889323900786
-    second: puzzle_0
+      213: 636931180278308649
+    second: Screenshot_9_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puzzle_0
+      name: Screenshot_9 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
-        width: 300
-        height: 300
+        y: 105
+        width: 116
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cc689c4e84291044a608d67ec3d6654
-      internalID: -505234443
+      spriteID: b125e387ea94ef54fb1c6a2008b78f5f
+      internalID: -1279725030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle_1
+      name: Screenshot_9 1_1
       rect:
         serializedVersion: 2
-        x: 300
-        y: 600
-        width: 300
-        height: 300
+        x: 116
+        y: 105
+        width: 116
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,108 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c21a5f8fe25ecf4d98f9be768e6e7b3
-      internalID: -1367721528
+      spriteID: 926bc0a88c11f454186273a9cf6cc8b6
+      internalID: -2139555420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle_2
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 600
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc0971240f0b67043bc38dda96d886d0
-      internalID: 1585860759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50be848d159172d4a979da70cbfb080e
-      internalID: -1757547010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle_4
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac092758f7b5fbe4a857d73756d256e8
-      internalID: -1073292526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle_5
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 300
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee1499a37c92c914ba36033f5caf47e4
-      internalID: 1381616891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle_6
+      name: Screenshot_9 1_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 300
+        width: 116
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0888fda240ad45247961e43a6d235a7e
-      internalID: -799762799
+      spriteID: b309c01fda227b740a9b0c8f4116b0e9
+      internalID: 1540020118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puzzle_7
+      name: Screenshot_9 1_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 116
         y: 0
-        width: 300
-        height: 300
+        width: 116
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,30 +233,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a89636ce4fe00d04a810ae28c111f5ab
-      internalID: 1355209848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puzzle_8
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23a4b9b6afd7d9a4296920a7f3088156
-      internalID: -1241276027
+      spriteID: 431aba158b37ee74bbf8c1d3e1cd37d3
+      internalID: 1770241909
       vertices: []
       indices: 
       edges: []
@@ -353,7 +243,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 56b3b4334f11ae6419f4232aee41b049
+    spriteID: 529a5c8d85ef4994fbf256359c74e5e7
     internalID: 0
     vertices: []
     indices: 
@@ -363,15 +253,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      puzzle_0: -505234443
-      puzzle_1: -1367721528
-      puzzle_2: 1585860759
-      puzzle_3: -1757547010
-      puzzle_4: -1073292526
-      puzzle_5: 1381616891
-      puzzle_6: -799762799
-      puzzle_7: 1355209848
-      puzzle_8: -1241276027
+      Screenshot_9 1_0: -1279725030
+      Screenshot_9 1_1: -2139555420
+      Screenshot_9 1_2: 1540020118
+      Screenshot_9 1_3: 1770241909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

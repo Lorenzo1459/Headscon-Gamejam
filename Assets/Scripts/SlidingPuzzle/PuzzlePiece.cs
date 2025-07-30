@@ -47,7 +47,7 @@ public class PuzzlePiece : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         int puzzleSize = slidingPuzzle.puzzleSize;
         int row = piecePosition / puzzleSize;
         int col = piecePosition % puzzleSize;
-        Debug.Log($"Clicked piece at value: {pieceValue}, position: {piecePosition}, row: {row}, col: {col}");
+        //Debug.Log($"Clicked piece at value: {pieceValue}, position: {piecePosition}, row: {row}, col: {col}");
         slidingPuzzle.MoveTile(row, col);
     }
 

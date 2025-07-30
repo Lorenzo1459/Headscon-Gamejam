@@ -6,7 +6,7 @@ public class Intro : MonoBehaviour
 {
     public List<Sprite> spritelist;
     private int id = 0;
-    public float cooldown = 1f;
+    public float cooldown = .1f;
     public float autopass = 5f;
     private float timer = 0f;
     public GameObject continueText;

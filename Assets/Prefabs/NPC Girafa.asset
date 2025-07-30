@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd384c3735ef78b46bc8be107a4ebf89, type: 3}
+  m_Name: NPC Girafa
+  m_EditorClassIdentifier: 
+  nome: girafa
+  sprite: {fileID: 5435764755121458304, guid: f702780425c4d4346bed25738b8bd8b1, type: 3}
+  puzzleObject: {fileID: 11400000, guid: 709b6bf76a040884d9aa463815b1abbb, type: 2}
+  minigameSceneName: PlatformMiniGame
