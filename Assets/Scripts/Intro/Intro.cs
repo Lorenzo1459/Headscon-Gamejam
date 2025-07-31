@@ -13,8 +13,11 @@ public class Intro : MonoBehaviour
 
     public Image imageObject;
 
+    private CursorManager cursorManager;
+
     void Start()
     {
+        cursorManager = FindObjectOfType<CursorManager>();
         continueText.SetActive(false);
         if (spritelist != null && spritelist.Count > 0 && imageObject != null)
         {
@@ -33,6 +36,10 @@ public class Intro : MonoBehaviour
          
             if (Input.GetMouseButtonDown(0) || timer > autopass)
             {
+                if (cursorManager != null)
+                {
+                    cursorManager.instance.SetDefaultCursor();
+                }
                 timer = 0f;
                 continueText.SetActive(false);
                 id++;
