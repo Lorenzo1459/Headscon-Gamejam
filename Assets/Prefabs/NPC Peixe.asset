@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: NPC Peixe
   m_EditorClassIdentifier: 
   nome: peixe
-  sprite: {fileID: -8854274255512903220, guid: 049ef055f7a9cee4e8c0db7db762d836, type: 3}
+  sprite: {fileID: -9115188988784294629, guid: 5edb144c6215e8f4aa9a1d57fa8edbbf, type: 3}
   puzzleObject: {fileID: 11400000, guid: 92b9f72d5b9b62e49becbd4d440ae22b, type: 2}
   minigameSceneName: PlatformMiniGame

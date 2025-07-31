@@ -18,8 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/AudioConfig.unity
     guid: 9ddf31052720340418640d31ff7b8c47
   - enabled: 1
-    path: Assets/Scenes/PlatformMiniGame.unity
+    path: Assets/Scenes/GiraffeMinigame.unity
     guid: b48ed4ee51c4b98489ed306263292b2c
+  - enabled: 1
+    path: Assets/Scenes/BeeMinigame.unity
+    guid: 674150164d2b1a642b61fe4e2b105439
+  - enabled: 1
+    path: Assets/Scenes/FishMinigame.unity
+    guid: 9605f14ec2abaff46b8f0b4f2b7896b0
+  - enabled: 1
+    path: Assets/Scenes/SlothMinigame.unity
+    guid: 5f0cdc2e9083f094db65925573c50c23
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

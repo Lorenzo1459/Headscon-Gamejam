@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Npc Abelha
   m_EditorClassIdentifier: 
   nome: abelha
-  sprite: {fileID: 376117793908038815, guid: 4c47b2b8bce4a1b4ea5f51be4b6eeb3a, type: 3}
+  sprite: {fileID: 4615908192777178219, guid: 8b5a84f7f7ac76b4b9f8729d9fb0bc82, type: 3}
   puzzleObject: {fileID: 11400000, guid: f6587d6ede2841b409bb4ddccbc5fffc, type: 2}
   minigameSceneName: PlatformMiniGame

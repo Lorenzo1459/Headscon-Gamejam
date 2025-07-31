@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Npc Preguica
   m_EditorClassIdentifier: 
   nome: preguica
-  sprite: {fileID: 9027329295974318660, guid: 9c5373a976e4bf1478668cb35e9aef35, type: 3}
+  sprite: {fileID: 4820719903670827469, guid: 8c4a3f019ca2bd241984376a4a3148c7, type: 3}
   puzzleObject: {fileID: 11400000, guid: 43596b6f21c67074d941aa6eb3442f77, type: 2}
   minigameSceneName: PlatformMiniGame

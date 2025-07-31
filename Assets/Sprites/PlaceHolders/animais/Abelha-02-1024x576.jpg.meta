@@ -186,7 +186,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Abelha-02-1024x576_0: 376117793908038815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
