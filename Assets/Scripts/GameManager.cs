@@ -7,6 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance; // Make instance static for easy access
     public ActiveNPC anpc;
+    public int activeNPCIndex = -1; // This can be used if you want to track the active NPC index separately
+    public bool isPuzzleSolved = false;
+    public GameObject tutorialObject;
+    public List<NPC> npcList;
+    public SlidingPuzzle slidingPuzzle;
+    public List<Image> npcImageList;
     //public int anpc.activeNPC = 0;
 
     void Awake()
@@ -14,12 +20,17 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             anpc = FindFirstObjectByType<ActiveNPC>();
+            if(anpc != null) activeNPCIndex = anpc.activeNPC;
             instance = this;
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+    void Start()
+    {
+        slidingPuzzle = FindFirstObjectByType<SlidingPuzzle>();
     }
 
     // Subscribe to the sceneLoaded event when this object is enabled
@@ -34,29 +45,38 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    public List<NPC> npcList;
-    public SlidingPuzzle slidingPuzzle; // This will be set in OnSceneLoaded
-    public Image npcImage;
+    
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (anpc != null)
+        {
+            activeNPCIndex = anpc.activeNPC;
+            if (anpc.showTutorial)
+            {
+                tutorialObject.SetActive(true);
+            }
+        }
+
         Debug.Log("Scene loaded: " + scene.name);
-        UpdatePuzzle();
+        //UpdatePuzzle();
     }
 
     void UpdatePuzzle()
     {
-
-        slidingPuzzle = FindFirstObjectByType<SlidingPuzzle>();
-        if (npcImage != null) npcImage.sprite = npcList[anpc.activeNPC].sprite;
+        for (int i = 0; i < npcImageList.Count; i++)
+        {
+            if (i == activeNPCIndex) npcImageList[i].gameObject.SetActive(true);
+            else npcImageList[i].gameObject.SetActive(false);
+        }
 
         if (slidingPuzzle != null)
         {
-            if (npcList != null && anpc.activeNPC >= 0 && anpc.activeNPC < npcList.Count)
+            if (npcList != null && activeNPCIndex >= 0 && activeNPCIndex < npcList.Count)
             {
-                if (npcList[anpc.activeNPC] != null && npcList[anpc.activeNPC].puzzleObject != null)
+                if (npcList[activeNPCIndex] != null && npcList[activeNPCIndex].puzzleObject != null)
                 {
-                    slidingPuzzle.puzzleObject = npcList[anpc.activeNPC].puzzleObject;
+                    slidingPuzzle.puzzleObject = npcList[activeNPCIndex].puzzleObject;
                     slidingPuzzle.LoadPuzzle();
                 }
             }
@@ -66,20 +86,34 @@ public class GameManager : MonoBehaviour
 
     public void GoToMinigame()
     {
-        PlayerPrefs.SetInt("anpc.activeNPC", anpc.activeNPC);
-        PlayerPrefs.Save();
-        SceneLoader.Instance.LoadScene(npcList[anpc.activeNPC].minigameSceneName);
+        SceneLoader.Instance.LoadScene(npcList[activeNPCIndex].minigameSceneName);
     }
 
     public void NextNPC()
     {
-        anpc.activeNPC++;
-        if (anpc.activeNPC >= npcList.Count)
+        NotFirstTime();
+        activeNPCIndex++;
+        if (activeNPCIndex >= npcList.Count)
         {
-            anpc.activeNPC = 0; // Loop back to the first NPC
+            activeNPCIndex = 0; // Loop back to the first NPC
         }
+
+        if (anpc != null) anpc.activeNPC++;
 
         UpdatePuzzle();
     }
 
+    public void NotFirstTime()
+    {
+        if(anpc != null)
+        {
+            anpc.showTutorial = false;
+            tutorialObject.SetActive(false);
+        }
+    }
+
+    public void StartMinigame()
+    {
+        SceneLoader.Instance.LoadScene(npcList[activeNPCIndex].minigameSceneName);
+    }
 }

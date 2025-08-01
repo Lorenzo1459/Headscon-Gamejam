@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: NPC Girafa
   m_EditorClassIdentifier: 
   nome: girafa
-  sprite: {fileID: -2720806252777496939, guid: 232275501eaf7b640ab4f08248c8b969, type: 3}
+  spriteBefore: {fileID: 21300000, guid: 35c12d21724c3d1409c33cfb6deb2a5a, type: 3}
+  spriteAfter: {fileID: 21300000, guid: 5392507f74f5d4942a4348b419ad7ce4, type: 3}
   puzzleObject: {fileID: 11400000, guid: 709b6bf76a040884d9aa463815b1abbb, type: 2}
-  minigameSceneName: PlatformMiniGame
+  minigameSceneName: GiraffeMiniGame

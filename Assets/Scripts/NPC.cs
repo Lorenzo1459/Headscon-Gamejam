@@ -6,7 +6,8 @@ public class NPC : ScriptableObject
 {
     [Header("Atributos")]
     public string nome;
-    public Sprite sprite;
+    public Sprite spriteBefore;
+    public Sprite spriteAfter;
     //bool minigameSolved = false;
 
     [Header("Minigame")]

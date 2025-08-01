@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Npc Preguica
   m_EditorClassIdentifier: 
   nome: preguica
-  sprite: {fileID: 4820719903670827469, guid: 8c4a3f019ca2bd241984376a4a3148c7, type: 3}
+  spriteBefore: {fileID: 21300000, guid: db9aa700577befe49b9f52512f06fa5c, type: 3}
+  spriteAfter: {fileID: 21300000, guid: c8a16387c9add5f4f86a43b0691a2baa, type: 3}
   puzzleObject: {fileID: 11400000, guid: 43596b6f21c67074d941aa6eb3442f77, type: 2}
-  minigameSceneName: PlatformMiniGame
+  minigameSceneName: SlothMiniGame

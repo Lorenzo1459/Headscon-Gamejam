@@ -65,6 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         if(context.performed)
         {
+            GameManager.instance.isPuzzleSolved = true;
             Debug.Log("Fase finalizada!");
             SceneLoader.Instance.LoadScene("Ingame");
             //FinishLevel();
