@@ -12,7 +12,7 @@ public class CursorManager : MonoBehaviour
         {
             instance = this;
             SetDefaultCursor();
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {

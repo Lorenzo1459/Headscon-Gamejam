@@ -1,17 +1,15 @@
 using UnityEngine;
 
-public class ActiveNPC : MonoBehaviour
+public class DontDestroy : MonoBehaviour
 {
-    public int activeNPC = 0;
-    public static ActiveNPC instance;
-    
+    private static DontDestroy instance;
+
     void Awake()
     {
         if (instance == null)
         {
-            activeNPC = 0;
             instance = this;
-            //DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {

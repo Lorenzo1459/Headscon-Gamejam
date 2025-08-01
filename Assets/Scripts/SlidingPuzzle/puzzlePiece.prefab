@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2992859905740850549}
   - component: {fileID: 4258605415012492937}
   - component: {fileID: 3965791856396182487}
+  - component: {fileID: 5561049348338201688}
   m_Layer: 5
   m_Name: puzzlePiece
   m_TagString: Untagged
@@ -93,6 +94,18 @@ MonoBehaviour:
   piecePosition: 0
   sprite: {fileID: 0}
   rightpostext: {fileID: 0}
+--- !u!114 &5561049348338201688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135520839949795008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f59d86598d6ff04e9a6d5ad0b7d8441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4631013023424253655
 GameObject:
   m_ObjectHideFlags: 0
