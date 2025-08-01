@@ -23,6 +23,7 @@ public class SlidingPuzzle : MonoBehaviour
     public int puzzleSize = 3;
     private int[,] puzzleGrid;
 
+    public GameObject rerollButton;
     // Elementos da UI
     public GameObject puzzlePiecePrefab;
     public GameObject parent;
@@ -52,7 +53,7 @@ public class SlidingPuzzle : MonoBehaviour
     public void LoadPuzzle()
     {
         ClearPuzzle();
-
+        rerollButton.SetActive(true);
         puzzleSize = puzzleObject.puzzleSize;
         spriteList = puzzleObject.spriteList;
         solvedImage.GetComponent<Image>().sprite = puzzleObject.completed;
@@ -166,6 +167,7 @@ public class SlidingPuzzle : MonoBehaviour
             piecesList[puzzleSize * puzzleSize - 1].SetActive(true);
             UpdatePieceVisuals(puzzleSize - 1, puzzleSize - 1);
             ClearPuzzle();
+            rerollButton.SetActive(false);
 
             solvedImage.SetActive(true);
         }
