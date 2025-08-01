@@ -17,7 +17,7 @@ public class Intro : MonoBehaviour
 
     void Start()
     {
-        cursorManager = FindObjectOfType<CursorManager>();
+        cursorManager = FindFirstObjectByType<CursorManager>();
         continueText.SetActive(false);
         if (spritelist != null && spritelist.Count > 0 && imageObject != null)
         {

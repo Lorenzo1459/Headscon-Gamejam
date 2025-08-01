@@ -7,7 +7,7 @@ public class NPC : ScriptableObject
     [Header("Atributos")]
     public string nome;
     public Sprite sprite;
-    bool minigameSolved = false;
+    //bool minigameSolved = false;
 
     [Header("Minigame")]
     public PuzzleObject puzzleObject;

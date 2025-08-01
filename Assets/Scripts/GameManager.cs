@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
         {
-            anpc = FindObjectOfType<ActiveNPC>();
+            anpc = FindFirstObjectByType<ActiveNPC>();
             instance = this;
         }
         else
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     void UpdatePuzzle()
     {
 
-        slidingPuzzle = FindObjectOfType<SlidingPuzzle>();
+        slidingPuzzle = FindFirstObjectByType<SlidingPuzzle>();
         if (npcImage != null) npcImage.sprite = npcList[anpc.activeNPC].sprite;
 
         if (slidingPuzzle != null)

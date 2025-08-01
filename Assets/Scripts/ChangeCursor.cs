@@ -7,7 +7,7 @@ public class ChangeCursor : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     void Start()
     {
-        cursorManager = FindObjectOfType<CursorManager>();
+        cursorManager = FindFirstObjectByType<CursorManager>();
         if (cursorManager != null)
         {
             cursorManager.SetDefaultCursor();
