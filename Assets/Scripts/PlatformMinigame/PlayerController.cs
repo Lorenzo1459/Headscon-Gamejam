@@ -9,9 +9,12 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f; // Ajuste a força do pulo conforme necessário
+    public bool canMove = true;
     public bool canJump = true;
-    public bool jumping = false; 
+    public bool jumping = false;
     float horizontalInput;
+
+    private Vector2 startPosition;
     // O footCollider não é mais usado diretamente para a detecção de chão com OverlapCircle,
     // mas pode ser útil para outras colisões ou visualização.
     // Se você não o usa para mais nada, pode removê-lo.
@@ -28,12 +31,20 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        startPosition = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        if (canMove)
+        {
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Prevent horizontal movement
+        }
 
         // Realiza a verificação de chão usando Physics2D.OverlapCircle
         // O OverlapCircle retorna um Collider2D se algo for detectado no círculo
@@ -52,13 +63,16 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         horizontalInput = context.ReadValue<Vector2>().x;
-        if (horizontalInput > 0)
+        if (canMove)
         {
-            transform.localScale = new Vector3(1, 1, 1); // Face right
-        }
-        else if (horizontalInput < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1); // Face left
+            if (horizontalInput > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1); // Face right
+            }
+            else if (horizontalInput < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1); // Face left
+            }
         }
     }
 
@@ -75,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnEndLevel(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if (context.performed)
         {
             GameManager.instance.isPuzzleSolved = true;
             Debug.Log("Fase finalizada!");
@@ -84,7 +98,33 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnTrigger2DEnter(){
+    public void PlayerDeath()
+    {
+        canMove = false; // Stop player movement
+        Debug.Log("Player Hit!");
+        rb.linearVelocity = Vector2.zero; // Stop the player movement
+        animator.SetTrigger("death"); // Trigger the death animation
+        
+    }
+    
+    public void OnDeathAnimationEnd()
+    {
+        transform.position = startPosition; // Reset to start position
+        rb.linearVelocity = Vector2.zero;   // Stop movement
+        //Debug.Log("Player reset after death animation.");
+    }
 
+    public void onBornAnimationEnd()
+    {
+        canMove = true; // Allow player movement after the born animation ends
+        //Debug.Log("Player Born Animation Ended!");
+        // Additional logic after the born animation ends, if needed
+    }
+
+    public void PlayerKill()
+    {
+        Debug.Log("Player Killed!");
+        // Call Animation Death
+        // Reset the player position or handle death logic
     }
 }

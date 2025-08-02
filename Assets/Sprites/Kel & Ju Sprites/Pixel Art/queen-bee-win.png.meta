@@ -1,37 +1,19 @@
 fileFormatVersion: 2
-guid: a7bd7fe6d3f464843b2a57b99d82dce5
+guid: d3b41b3310da5f24cba2a7f7db043a1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3550592949079374358
-    second: bat-pato-die_0
+      213: -2659913033818128301
+    second: queen-bee-win_0
   - first:
-      213: 1653823297725874524
-    second: bat-pato-die_1
+      213: 6579551266515781086
+    second: queen-bee-win_1
   - first:
-      213: -1410195031628401697
-    second: bat-pato-die_2
+      213: -4051676549328885544
+    second: queen-bee-win_2
   - first:
-      213: 7665341465855025419
-    second: bat-pato-die_3
-  - first:
-      213: -6162186675931046485
-    second: bat-pato-die_4
-  - first:
-      213: -4383564210460076995
-    second: bat-pato-die_5
-  - first:
-      213: 685245546140533204
-    second: bat-pato-die_6
-  - first:
-      213: -4602649045325476361
-    second: bat-pato-die_7
-  - first:
-      213: 5079753012241082018
-    second: bat-pato-die_8
-  - first:
-      213: 2971775371138418605
-    second: bat-pato-die_9
+      213: 2750159968785463804
+    second: queen-bee-win_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,32 +81,6 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -162,29 +118,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bat-pato-die_0
+      name: queen-bee-win_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 31
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,17 +137,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae50e105682c9bec0800000000000000
-      internalID: -3550592949079374358
+      spriteID: 350c6d54037161bd0800000000000000
+      internalID: -2659913033818128301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat-pato-die_1
+      name: queen-bee-win_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 0
         width: 32
         height: 32
@@ -216,19 +159,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c514736e68f83f610800000000000000
-      internalID: 1653823297725874524
+      spriteID: ed5052654034f4b50800000000000000
+      internalID: 6579551266515781086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat-pato-die_2
+      name: queen-bee-win_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 58
         y: 0
-        width: 32
+        width: 38
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -238,19 +181,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd3b4cb171bfd6ce0800000000000000
-      internalID: -1410195031628401697
+      spriteID: 8d8a87425ad85c7c0800000000000000
+      internalID: -4051676549328885544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat-pato-die_3
+      name: queen-bee-win_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 94
         y: 0
-        width: 32
+        width: 33
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -260,52 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b016c525373c06a60800000000000000
-      internalID: 7665341465855025419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bat-pato-die_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bad1c7dedd38b7aa0800000000000000
-      internalID: -6162186675931046485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bat-pato-die_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d34596163937a23c0800000000000000
-      internalID: -4383564210460076995
+      spriteID: cf9f4feabe78a2620800000000000000
+      internalID: 2750159968785463804
       vertices: []
       indices: 
       edges: []
@@ -314,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d9adc4e1546a2a541b490ac217821d1e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -323,13 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bat-pato-die_0: -3550592949079374358
-      bat-pato-die_1: 1653823297725874524
-      bat-pato-die_2: -1410195031628401697
-      bat-pato-die_3: 7665341465855025419
-      bat-pato-die_4: -6162186675931046485
-      bat-pato-die_5: -4383564210460076995
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

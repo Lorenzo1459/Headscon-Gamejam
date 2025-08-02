@@ -1,37 +1,64 @@
 fileFormatVersion: 2
-guid: a7bd7fe6d3f464843b2a57b99d82dce5
+guid: 53a53ebb181caa443ba281a334380824
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3550592949079374358
-    second: bat-pato-die_0
+      213: -1172182006671952284
+    second: lose-anim_0
   - first:
-      213: 1653823297725874524
-    second: bat-pato-die_1
+      213: 153297458973465621
+    second: lose-anim_1
   - first:
-      213: -1410195031628401697
-    second: bat-pato-die_2
+      213: 5345533719654615878
+    second: lose-anim_2
   - first:
-      213: 7665341465855025419
-    second: bat-pato-die_3
+      213: 1982917566820475421
+    second: lose-anim_3
   - first:
-      213: -6162186675931046485
-    second: bat-pato-die_4
+      213: -76675745882548138
+    second: lose-anim_4
   - first:
-      213: -4383564210460076995
-    second: bat-pato-die_5
+      213: -5174397610329551332
+    second: lose-anim_5
   - first:
-      213: 685245546140533204
-    second: bat-pato-die_6
+      213: 119705057034794325
+    second: lose-anim_6
   - first:
-      213: -4602649045325476361
-    second: bat-pato-die_7
+      213: 1730443689870792548
+    second: lose-anim_7
   - first:
-      213: 5079753012241082018
-    second: bat-pato-die_8
+      213: -3344085808068157989
+    second: lose-anim_8
   - first:
-      213: 2971775371138418605
-    second: bat-pato-die_9
+      213: -8727525528428342119
+    second: lose-anim_9
+  - first:
+      213: -3185963832065080652
+    second: lose-anim_10
+  - first:
+      213: -1016613025878792761
+    second: lose-anim_11
+  - first:
+      213: -925648935683698954
+    second: lose-anim_12
+  - first:
+      213: 3866419533246201450
+    second: lose-anim_13
+  - first:
+      213: -6517580216627856987
+    second: lose-anim_14
+  - first:
+      213: 301727754562241387
+    second: lose-anim_15
+  - first:
+      213: -6042219509749001821
+    second: lose-anim_16
+  - first:
+      213: 138685256787079452
+    second: lose-anim_17
+  - first:
+      213: -1871422395750431966
+    second: lose-anim_18
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,32 +138,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -162,24 +163,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bat-pato-die_0
+      name: lose-anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -187,21 +175,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae50e105682c9bec0800000000000000
-      internalID: -3550592949079374358
+      spriteID: 466b638eca29bbfe0800000000000000
+      internalID: -1172182006671952284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat-pato-die_1
+      name: lose-anim_1
       rect:
         serializedVersion: 2
         x: 32
@@ -209,21 +197,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c514736e68f83f610800000000000000
-      internalID: 1653823297725874524
+      spriteID: 51c551b0a3f902200800000000000000
+      internalID: 153297458973465621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat-pato-die_2
+      name: lose-anim_2
       rect:
         serializedVersion: 2
         x: 64
@@ -231,21 +219,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd3b4cb171bfd6ce0800000000000000
-      internalID: -1410195031628401697
+      spriteID: 64bc2ee98962f2a40800000000000000
+      internalID: 5345533719654615878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat-pato-die_3
+      name: lose-anim_3
       rect:
         serializedVersion: 2
         x: 96
@@ -253,21 +241,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b016c525373c06a60800000000000000
-      internalID: 7665341465855025419
+      spriteID: d126735650db48b10800000000000000
+      internalID: 1982917566820475421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat-pato-die_4
+      name: lose-anim_4
       rect:
         serializedVersion: 2
         x: 128
@@ -275,24 +263,68 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bad1c7dedd38b7aa0800000000000000
-      internalID: -6162186675931046485
+      spriteID: 65858cbb0d79feef0800000000000000
+      internalID: -76675745882548138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat-pato-die_5
+      name: lose-anim_5
       rect:
         serializedVersion: 2
         x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e4dadd9c8d038b0800000000000000
+      internalID: -5174397610329551332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose-anim_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8eae1015064bcd41bd6e145fdfe8059
+      internalID: 350270188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose-anim_7
+      rect:
+        serializedVersion: 2
+        x: 224
         y: 0
         width: 32
         height: 32
@@ -302,10 +334,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d34596163937a23c0800000000000000
-      internalID: -4383564210460076995
+      spriteID: cb6ccb2d9850f5249a2bbab7d47fd7d8
+      internalID: -911044347
       vertices: []
       indices: 
       edges: []
@@ -314,7 +346,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d9adc4e1546a2a541b490ac217821d1e
+    spriteID: ef1021e8407c5af4190e654ef634c670
     internalID: 0
     vertices: []
     indices: 
@@ -324,12 +356,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bat-pato-die_0: -3550592949079374358
-      bat-pato-die_1: 1653823297725874524
-      bat-pato-die_2: -1410195031628401697
-      bat-pato-die_3: 7665341465855025419
-      bat-pato-die_4: -6162186675931046485
-      bat-pato-die_5: -4383564210460076995
+      lose-anim_0: -1172182006671952284
+      lose-anim_1: 153297458973465621
+      lose-anim_2: 5345533719654615878
+      lose-anim_3: 1982917566820475421
+      lose-anim_4: -76675745882548138
+      lose-anim_5: -5174397610329551332
+      lose-anim_6: 350270188
+      lose-anim_7: -911044347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
