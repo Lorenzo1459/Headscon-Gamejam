@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      girafa_0: -6534552766123136514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
