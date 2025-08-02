@@ -4,12 +4,13 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Animator animator;
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f; // Ajuste a força do pulo conforme necessário
     public bool canJump = true;
-    public bool jumping = false; // Variável para controlar se o jogador está pulando
+    public bool jumping = false; 
     float horizontalInput;
     // O footCollider não é mais usado diretamente para a detecção de chão com OverlapCircle,
     // mas pode ser útil para outras colisões ou visualização.
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,6 +41,14 @@ public class PlayerController : MonoBehaviour
         if (isGrounded && rb.linearVelocity.y <= 0) canJump = true;
     }
 
+    void LateUpdate()
+    {
+        if (animator != null)
+        {
+            animator.SetFloat("speed", Mathf.Abs(horizontalInput));
+            animator.SetBool("jump", !isGrounded);
+        }
+    }
     public void OnMove(InputAction.CallbackContext context)
     {
         horizontalInput = context.ReadValue<Vector2>().x;
