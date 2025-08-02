@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      colmeia_0: 4320793734025241553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
