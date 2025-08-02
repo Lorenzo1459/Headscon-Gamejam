@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b9c41bf6631303849b084f6076c651c5
+guid: 0d913a95066dd7a4497039fb63a7b3b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6534552766123136514
-    second: girafa_0
+      213: -7828175972308749142
+    second: "bot\xE3o-tentar-denovo_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: girafa_0
+      name: "bot\xE3o-tentar-denovo_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1200
-        height: 1200
+        y: 1
+        width: 199
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef92f2971ea9055a0800000000000000
-      internalID: -6534552766123136514
+      spriteID: aa4f94bbd6bbc5390800000000000000
+      internalID: -7828175972308749142
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      girafa_0: -6534552766123136514
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

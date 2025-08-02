@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Level2x2
   m_EditorClassIdentifier: 
   puzzleSize: 2
-  completed: {fileID: -6534552766123136514, guid: b9c41bf6631303849b084f6076c651c5, type: 3}
+  completed: {fileID: 4341968797235673559, guid: 02c291e30f361244d8c4bbcb47f6a2d9, type: 3}
   spriteList:
-  - {fileID: -1221678356, guid: b09364564da019f42bfffc1db46648f7, type: 3}
-  - {fileID: -508541141, guid: b09364564da019f42bfffc1db46648f7, type: 3}
-  - {fileID: -1412177956, guid: b09364564da019f42bfffc1db46648f7, type: 3}
-  - {fileID: -1217806164, guid: b09364564da019f42bfffc1db46648f7, type: 3}
+  - {fileID: -1668695095, guid: e5ceb3f856d30314894bf2fcd0f2c4cc, type: 3}
+  - {fileID: 1950534439, guid: e5ceb3f856d30314894bf2fcd0f2c4cc, type: 3}
+  - {fileID: 1299613119, guid: e5ceb3f856d30314894bf2fcd0f2c4cc, type: 3}
+  - {fileID: 753090722, guid: e5ceb3f856d30314894bf2fcd0f2c4cc, type: 3}

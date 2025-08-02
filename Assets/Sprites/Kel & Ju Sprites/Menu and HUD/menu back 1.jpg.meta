@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b09364564da019f42bfffc1db46648f7
+guid: 46ac5f49d986e0a4792a7afc2cde4ac1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6534552766123136514
-    second: girafa_0
+      213: 5665759273523268607
+    second: menu back 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,89 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: girafa 1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 600
-        width: 600
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d6875476e6f990468cba981a283e899
-      internalID: -1221678356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girafa 1_1
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 600
-        width: 600
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33115ba1113343f4eab0b632b41c5bb9
-      internalID: -508541141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girafa 1_2
+      name: menu back 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 600
-        height: 600
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a1eaef0c745838a4fa28f030af64e247
-      internalID: -1412177956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: girafa 1_3
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 600
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 355b6f74b59b7da498517148dd5336fa
-      internalID: -1217806164
+      spriteID: ffbca317a02d0ae40800000000000000
+      internalID: 5665759273523268607
       vertices: []
       indices: 
       edges: []
@@ -204,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 14c3aa00a345b5e459a529220a749c54
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -213,11 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      girafa 1_0: -1221678356
-      girafa 1_1: -508541141
-      girafa 1_2: -1412177956
-      girafa 1_3: -1217806164
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
