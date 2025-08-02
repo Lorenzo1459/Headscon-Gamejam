@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _TroubadeckLoops_0: 1792440269019529476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
