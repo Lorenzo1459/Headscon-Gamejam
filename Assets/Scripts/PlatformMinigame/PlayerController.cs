@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f; // Ajuste a força do pulo conforme necessário
-    bool canJump = true;
+    public bool canJump = true;
+    public bool jumping = false; // Variável para controlar se o jogador está pulando
     float horizontalInput;
     // O footCollider não é mais usado diretamente para a detecção de chão com OverlapCircle,
     // mas pode ser útil para outras colisões ou visualização.
@@ -56,7 +57,8 @@ public class PlayerController : MonoBehaviour
         if (context.performed && canJump)
         {
             canJump = false;
-            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse); // Adjust the jump force as needed
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            //rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse); // Adjust the jump force as needed
         }
         //else if( context)
     }
@@ -72,4 +74,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnTrigger2DEnter(){
+
+    }
 }

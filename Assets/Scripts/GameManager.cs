@@ -114,6 +114,8 @@ public class GameManager : MonoBehaviour
 
     public void StartMinigame()
     {
+        Debug.Log(activeNPCIndex);
+        Debug.Log(npcList[activeNPCIndex].minigameSceneName);
         SceneLoader.Instance.LoadScene(npcList[activeNPCIndex].minigameSceneName);
     }
 }
