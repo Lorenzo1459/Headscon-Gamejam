@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         startPosition = transform.position;
-        heldItem = GameObject.FindGameObjectWithTag("Item");
         if (heldItem != null)
         {
             heldItem.SetActive(false); // Ensure the item is not active at the start
@@ -140,8 +139,11 @@ public class PlayerController : MonoBehaviour
 
     public void HoldItem()
     {
+        Debug.Log("Holding Item!");
+        Debug.Log(heldItem);
         if (heldItem != null)
         {
+            Debug.Log("Item found");
             heldItem.SetActive(true);
             isHoldingItem = true;
         }
