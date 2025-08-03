@@ -24,7 +24,7 @@ public class EnemyMove : MonoBehaviour
         if (movingRight)
         {
             transform.position = Vector2.MoveTowards(transform.position, endPosition, speed * Time.deltaTime);
-            transform.localScale = new Vector3(1, 1, 1); 
+            transform.localScale = new Vector3(1, 1, 1);
 
             if (Vector2.Distance(transform.position, endPosition) < 0.1f)
             {
@@ -40,6 +40,11 @@ public class EnemyMove : MonoBehaviour
                 movingRight = true;
             }
         }
+    }
+
+    public void StopMovementt()
+    {
+        speed = 0f; // Stop the enemy movement
     }
 
 }
