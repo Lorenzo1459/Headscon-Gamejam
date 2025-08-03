@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 1e7e940124403de4c976d1d1ab50fba5
+guid: d3b41b3310da5f24cba2a7f7db043a1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5796343751176186051
-    second: queen-bee_0
+      213: -2659913033818128301
+    second: queen-bee-win_0
+  - first:
+      213: 6579551266515781086
+    second: queen-bee-win_1
+  - first:
+      213: -4051676549328885544
+    second: queen-bee-win_2
+  - first:
+      213: 2750159968785463804
+    second: queen-bee-win_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,12 +122,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: queen-bee_0
+      name: queen-bee-win_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 31
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d37961391104f8fa0800000000000000
-      internalID: -5796343751176186051
+      spriteID: 350c6d54037161bd0800000000000000
+      internalID: -2659913033818128301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: queen-bee-win_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5052654034f4b50800000000000000
+      internalID: 6579551266515781086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: queen-bee-win_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8a87425ad85c7c0800000000000000
+      internalID: -4051676549328885544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: queen-bee-win_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9f4feabe78a2620800000000000000
+      internalID: 2750159968785463804
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7d57fd6e8710da045956b7673b628672
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      queen-bee_0: -5796343751176186051
+      queen-bee-win_0: -2659913033818128301
+      queen-bee-win_1: 6579551266515781086
+      queen-bee-win_2: -4051676549328885544
+      queen-bee-win_3: 2750159968785463804
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

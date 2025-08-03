@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Enemy : MonoBehaviour
+public class EnemyMove : MonoBehaviour
 {
     public float speed;
     public bool movingRight = true;
@@ -42,11 +42,4 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            collision.GetComponent<PlayerController>().PlayerDeath();
-        }
-    }
 }
