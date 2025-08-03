@@ -8,19 +8,26 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    public float jumpForce = 5f; 
+    public float jumpForce = 5f;
     public bool canMove = true;
     public bool canJump = true;
     public bool jumping = false;
     float horizontalInput;
 
+
+
     private Vector2 startPosition;
 
     [Header("Ground Check Settings")]
-    public LayerMask groundLayer; 
+    public LayerMask groundLayer;
     public Transform groundCheckPoint;
     private bool isGrounded;
-    float groundCheckRadius = 0.2f; 
+    float groundCheckRadius = 0.2f;
+
+    [Header("Item Settings")]
+
+    public GameObject heldItem;
+    public bool isHoldingItem = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +35,11 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         startPosition = transform.position;
+        heldItem = GameObject.FindGameObjectWithTag("Item");
+        if (heldItem != null)
+        {
+            heldItem.SetActive(false); // Ensure the item is not active at the start
+        }
     }
 
     // Update is called once per frame
@@ -99,11 +111,12 @@ public class PlayerController : MonoBehaviour
     {
         canMove = false; // Stop player movement
         Debug.Log("Player Hit!");
+        StopHoldingItem(); // Stop holding item if any
         rb.linearVelocity = Vector2.zero; // Stop the player movement
         animator.SetTrigger("death"); // Trigger the death animation
 
     }
-    
+
     public void OnDeathAnimationEnd()
     {
         transform.position = startPosition; // Reset to start position
@@ -123,5 +136,23 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Player Killed!");
         // Call Animation Death
         // Reset the player position or handle death logic
+    }
+
+    public void HoldItem()
+    {
+        if (heldItem != null)
+        {
+            heldItem.SetActive(true);
+            isHoldingItem = true;
+        }
+    }
+
+    public void StopHoldingItem()
+    {
+        if (heldItem != null)
+        {
+            heldItem.SetActive(false);
+            isHoldingItem = false;
+        }
     }
 }
