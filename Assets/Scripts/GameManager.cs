@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public List<NPC> npcList;
     public SlidingPuzzle slidingPuzzle;
     public List<Image> npcImageList;
+    public GameObject nextNPC;
     //public int anpc.activeNPC = 0;
 
     void Awake()
@@ -55,6 +56,22 @@ public class GameManager : MonoBehaviour
             if (anpc.showTutorial)
             {
                 tutorialObject.SetActive(true);
+            }
+
+            Debug.Log(anpc.levelPass);
+            if (activeNPCIndex >= 0 && activeNPCIndex < npcList.Count)
+            {
+                if (anpc.levelPass)
+                {
+                    // Mostrar o Image do NPC ativo
+                    // Ativar o Image correspondente ao NPC ativo
+                    npcImageList[activeNPCIndex].gameObject.SetActive(true);
+                    npcImageList[activeNPCIndex].sprite = npcList[activeNPCIndex].spriteAfter;
+                }
+                else
+                {
+                    npcImageList[activeNPCIndex].gameObject.SetActive(false);
+                }
             }
         }
 

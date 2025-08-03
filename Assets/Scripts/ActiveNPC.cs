@@ -3,6 +3,7 @@ using UnityEngine;
 public class ActiveNPC : MonoBehaviour
 {
     public int activeNPC = 0;
+    public bool levelPass = false;
     public bool showTutorial = true;
     public static ActiveNPC instance;
     

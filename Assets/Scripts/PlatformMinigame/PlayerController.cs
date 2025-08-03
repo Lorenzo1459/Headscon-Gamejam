@@ -91,11 +91,15 @@ public class PlayerController : MonoBehaviour
     {
         if (context.performed)
         {
-            GameManager.instance.isPuzzleSolved = true;
-            Debug.Log("Fase finalizada!");
-            SceneLoader.Instance.LoadScene("Ingame");
-            //FinishLevel();
+            EndLevel();
         }
+    }
+
+    public void EndLevel()
+    {
+        ActiveNPC.instance.levelPass = true;
+        Debug.Log("Fase finalizada!");
+        SceneLoader.Instance.LoadScene("Ingame");
     }
 
     public void PlayerDeath()
@@ -104,7 +108,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Player Hit!");
         rb.linearVelocity = Vector2.zero; // Stop the player movement
         animator.SetTrigger("death"); // Trigger the death animation
-        
+
     }
     
     public void OnDeathAnimationEnd()
