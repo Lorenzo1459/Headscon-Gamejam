@@ -1,0 +1,705 @@
+fileFormatVersion: 2
+guid: 5bb10a2fd3a3fab4dbe21be9594d74e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3987276521921488172
+    second: v1_vasco_h_branco_0
+  - first:
+      213: -5309686136606088700
+    second: v1_vasco_h_branco_1
+  - first:
+      213: 5303785951131539053
+    second: v1_vasco_h_branco_2
+  - first:
+      213: 8745133823466292858
+    second: v1_vasco_h_branco_3
+  - first:
+      213: 5057153275270501674
+    second: v1_vasco_h_branco_4
+  - first:
+      213: -2657438599940282005
+    second: v1_vasco_h_branco_5
+  - first:
+      213: 3538542475410867464
+    second: v1_vasco_h_branco_6
+  - first:
+      213: 9078177257482597679
+    second: v1_vasco_h_branco_7
+  - first:
+      213: -3113114290824689383
+    second: v1_vasco_h_branco_8
+  - first:
+      213: -762572889888842001
+    second: v1_vasco_h_branco_9
+  - first:
+      213: -4728132018611493031
+    second: v1_vasco_h_branco_10
+  - first:
+      213: 2448956014832507908
+    second: v1_vasco_h_branco_11
+  - first:
+      213: 5364573554801123567
+    second: v1_vasco_h_branco_12
+  - first:
+      213: 3430762654783031206
+    second: v1_vasco_h_branco_13
+  - first:
+      213: -4405283621890748553
+    second: v1_vasco_h_branco_14
+  - first:
+      213: -6594867403261401520
+    second: v1_vasco_h_branco_15
+  - first:
+      213: 8997044893866280673
+    second: v1_vasco_h_branco_16
+  - first:
+      213: 4493574502309803792
+    second: v1_vasco_h_branco_17
+  - first:
+      213: 3991933511909436600
+    second: v1_vasco_h_branco_18
+  - first:
+      213: 7241951875069085021
+    second: v1_vasco_h_branco_19
+  - first:
+      213: -420156331501561435
+    second: v1_vasco_h_branco_20
+  - first:
+      213: 7002336550050421459
+    second: v1_vasco_h_branco_21
+  - first:
+      213: -6155832835556884509
+    second: v1_vasco_h_branco_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 279
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25a2660fd6a55730800000000000000
+      internalID: 3987276521921488172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 156
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40227c637943056b0800000000000000
+      internalID: -5309686136606088700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 156
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6617edc835da9940800000000000000
+      internalID: 5303785951131539053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 156
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7646f4f0e4fc5970800000000000000
+      internalID: 8745133823466292858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_4
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 156
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2593332c1e9e2640800000000000000
+      internalID: 5057153275270501674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_5
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 156
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69e52e4ca1ee1bd0800000000000000
+      internalID: -2657438599940282005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_6
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 156
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8050f7522ad6b1130800000000000000
+      internalID: 3538542475410867464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_7
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 156
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25b7401e1a2cfd70800000000000000
+      internalID: 9078177257482597679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_8
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 156
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919c336eb0ffbc4d0800000000000000
+      internalID: -3113114290824689383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 156
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee15d63ffbca65f0800000000000000
+      internalID: -762572889888842001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_10
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 156
+        width: 10
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957e283dafc426eb0800000000000000
+      internalID: -4728132018611493031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_11
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 156
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40cd5a635807cf120800000000000000
+      internalID: 2448956014832507908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_12
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 156
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe02061b93bc27a40800000000000000
+      internalID: 5364573554801123567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 156
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7c40325748c9f20800000000000000
+      internalID: 3430762654783031206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 91
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f0b56d2e94dd2c0800000000000000
+      internalID: -4405283621890748553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_15
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 91
+        width: 10
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0562dcfa9035a74a0800000000000000
+      internalID: -6594867403261401520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_16
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 91
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6442f99acebdc70800000000000000
+      internalID: 8997044893866280673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_17
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 91
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017bdeda3326c5e30800000000000000
+      internalID: 4493574502309803792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_18
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 91
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bce6500162366730800000000000000
+      internalID: 3991933511909436600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_19
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 91
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5587f16cd4908460800000000000000
+      internalID: 7241951875069085021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_20
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 91
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9d7b6ea0e4b2af0800000000000000
+      internalID: -420156331501561435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_21
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 91
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da5d770efb4d2160800000000000000
+      internalID: 7002336550050421459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: v1_vasco_h_branco_22
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 91
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef32fba6a6129aa0800000000000000
+      internalID: -6155832835556884509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

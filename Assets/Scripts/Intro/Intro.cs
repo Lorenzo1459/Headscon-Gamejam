@@ -34,7 +34,7 @@ public class Intro : MonoBehaviour
         {
             continueText.SetActive(true);
          
-            if (Input.GetMouseButtonDown(0)) // || timer >= autopass)
+            if (Input.GetMouseButtonDown(0) || timer >= autopass) // || timer >= autopass)
             {
                 if (cursorManager != null)
                 {

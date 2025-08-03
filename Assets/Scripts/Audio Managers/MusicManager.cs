@@ -2,25 +2,22 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    private static MusicManager instance; // Corrigido para static
-
+    private static MusicManager instance;
     private AudioSource audioSource;
     public AudioClip[] musicClips;
 
-    private void Awake()
+    void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject); // Mantém o objeto entre as cenas
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {
-            Destroy(gameObject); // Destroi instâncias duplicadas
-            return;
+            Destroy(gameObject);
         }
     }
-
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();

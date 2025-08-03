@@ -10,9 +10,11 @@ public class GameManager : MonoBehaviour
     public int activeNPCIndex = -1; // This can be used if you want to track the active NPC index separately
     public bool isPuzzleSolved = false;
     public GameObject tutorialObject;
+    public GameObject creditsObject;
     public List<NPC> npcList;
     public SlidingPuzzle slidingPuzzle;
     public List<Image> npcImageList;
+    
     public GameObject nextNPC;
     //public int anpc.activeNPC = 0;
 
@@ -112,7 +114,7 @@ public class GameManager : MonoBehaviour
         activeNPCIndex++;
         if (activeNPCIndex >= npcList.Count)
         {
-            activeNPCIndex = 0; // Loop back to the first NPC
+            EndGame();
         }
 
         if (anpc != null) anpc.activeNPC++;
@@ -120,9 +122,14 @@ public class GameManager : MonoBehaviour
         UpdatePuzzle();
     }
 
+    public void EndGame()
+    {
+        creditsObject.SetActive(true);
+    }
+
     public void NotFirstTime()
     {
-        if(anpc != null)
+        if (anpc != null)
         {
             anpc.showTutorial = false;
             tutorialObject.SetActive(false);
