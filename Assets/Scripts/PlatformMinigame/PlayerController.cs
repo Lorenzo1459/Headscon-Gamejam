@@ -8,23 +8,19 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    public float jumpForce = 5f; // Ajuste a força do pulo conforme necessário
+    public float jumpForce = 5f; 
     public bool canMove = true;
     public bool canJump = true;
     public bool jumping = false;
     float horizontalInput;
 
     private Vector2 startPosition;
-    // O footCollider não é mais usado diretamente para a detecção de chão com OverlapCircle,
-    // mas pode ser útil para outras colisões ou visualização.
-    // Se você não o usa para mais nada, pode removê-lo.
-    // public Collider2D footCollider; 
 
     [Header("Ground Check Settings")]
-    public LayerMask groundLayer; // Continua sendo importante para filtrar o que é "chão"
-    public Transform groundCheckPoint; // Ponto de onde o OverlapCircle será lançado
+    public LayerMask groundLayer; 
+    public Transform groundCheckPoint;
     private bool isGrounded;
-    float groundCheckRadius = 0.2f; // Raio do OverlapCircle
+    float groundCheckRadius = 0.2f; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,8 +42,6 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Prevent horizontal movement
         }
 
-        // Realiza a verificação de chão usando Physics2D.OverlapCircle
-        // O OverlapCircle retorna um Collider2D se algo for detectado no círculo
         isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
         if (isGrounded && rb.linearVelocity.y <= 0) canJump = true;
     }
@@ -82,9 +76,8 @@ public class PlayerController : MonoBehaviour
         {
             canJump = false;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            //rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse); // Adjust the jump force as needed
+            //rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse); 
         }
-        //else if( context)
     }
 
     public void OnEndLevel(InputAction.CallbackContext context)

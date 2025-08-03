@@ -41,4 +41,12 @@ public class MusicManager : MonoBehaviour
         audioSource.clip = musicClips[randomIndex];
         audioSource.Play();
     }
+
+    public void StopMusic()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
 }

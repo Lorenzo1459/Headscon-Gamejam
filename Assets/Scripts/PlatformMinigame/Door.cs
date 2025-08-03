@@ -2,7 +2,6 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class Door : MonoBehaviour
-
 {
     void Start()
     {
@@ -12,11 +11,16 @@ public class Door : MonoBehaviour
             collider.isTrigger = true;
         }
     }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerController>().EndLevel();
+            PlayerController playerController = collision.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                playerController.EndLevel();
+            }
         }
     }
 }
