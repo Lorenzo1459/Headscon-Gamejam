@@ -175,6 +175,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -697,7 +710,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      v1_vasco_h_branco_0: 3987276521921488172
+      v1_vasco_h_branco_1: -5309686136606088700
+      v1_vasco_h_branco_10: -4728132018611493031
+      v1_vasco_h_branco_11: 2448956014832507908
+      v1_vasco_h_branco_12: 5364573554801123567
+      v1_vasco_h_branco_13: 3430762654783031206
+      v1_vasco_h_branco_14: -4405283621890748553
+      v1_vasco_h_branco_15: -6594867403261401520
+      v1_vasco_h_branco_16: 8997044893866280673
+      v1_vasco_h_branco_17: 4493574502309803792
+      v1_vasco_h_branco_18: 3991933511909436600
+      v1_vasco_h_branco_19: 7241951875069085021
+      v1_vasco_h_branco_2: 5303785951131539053
+      v1_vasco_h_branco_20: -420156331501561435
+      v1_vasco_h_branco_21: 7002336550050421459
+      v1_vasco_h_branco_22: -6155832835556884509
+      v1_vasco_h_branco_3: 8745133823466292858
+      v1_vasco_h_branco_4: 5057153275270501674
+      v1_vasco_h_branco_5: -2657438599940282005
+      v1_vasco_h_branco_6: 3538542475410867464
+      v1_vasco_h_branco_7: 9078177257482597679
+      v1_vasco_h_branco_8: -3113114290824689383
+      v1_vasco_h_branco_9: -762572889888842001
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

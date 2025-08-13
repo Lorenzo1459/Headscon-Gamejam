@@ -31,6 +31,8 @@ public class SlidingPuzzle : MonoBehaviour
     private readonly List<GameObject> piecesList = new List<GameObject>();
     public List<Sprite> spriteList;
 
+    public AudioClip winClip;
+
     private bool checking = false;
     private bool solved = false;
 
@@ -165,6 +167,10 @@ public class SlidingPuzzle : MonoBehaviour
         {   
             Debug.Log("Puzzle Resolvido!");
             piecesList[puzzleSize * puzzleSize - 1].SetActive(true);
+
+            if(winClip != null)
+                SFXManager.instance.PlaySFX(winClip, transform, 1);
+
             UpdatePieceVisuals(puzzleSize - 1, puzzleSize - 1);
             ClearPuzzle();
             rerollButton.SetActive(false);
