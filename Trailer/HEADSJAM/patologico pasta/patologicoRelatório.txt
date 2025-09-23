@@ -1,0 +1,44 @@
+Relatório criado: 
+	22/09/2025	21:30:55
+
+Nome do projeto: patologico.aep
+
+Arquivos de origem coletados em: 
+	C:\Users\Noturno\Documents\Danilo\AfterEffectsAnimations\HEADSJAM\patologico pasta
+
+Arquivos de origem coletados: Tudo
+
+Composições coletadas:  
+	Comp
+	Intro
+	
+Número de arquivos coletados: 16
+
+Tamanho dos arquivos coletados: 23,3 MB
+
+Arquivos de origem coletados: 
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\capa itch pato.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 1.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 10.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 2.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 3.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 4.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 5.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 6.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 7.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 8.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Assets\Art\Ilustrações Intro\cena 9.jpg
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Design\1000177436-removebg-preview.png
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Trailer\Intro\1 fundo.png
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon Gamejam 280725\Trailer\Intro\1 pato.png
+	C:\Users\Noturno\Documents\Danilo\UnityGames\Headscon-Gamejam\Assets\Audio\lofi-chill-374877.mp3
+	C:\Users\Noturno\Downloads\Coyote Beatz.mpeg
+	
+Plug-ins de renderização:
+	3D clássico
+	
+Efeitos usados: 1
+
+Efeito: Preenchimento
+	
+
